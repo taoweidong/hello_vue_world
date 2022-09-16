@@ -1,12 +1,20 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
+// 将vue引入vue中
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    // 定义的变量
+    count: 0,
+  },
   getters: {},
-  mutations: {},
+  mutations: {
+    increment(state) {
+      state.count++;
+    },
+  },
   actions: {},
   modules: {},
 });
