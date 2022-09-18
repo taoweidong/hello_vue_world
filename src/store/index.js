@@ -1,20 +1,15 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import Cookies from "js-cookie";
 
-// 将vue引入vue中
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {
-    // 定义的变量
-    count: 0,
+    authToken: Cookies.get("authToken") || "",
   },
-  getters: {},
-  mutations: {
-    increment(state) {
-      state.count++;
-    },
-  },
+  mutations: {},
   actions: {},
-  modules: {},
 });
+
+export default store;
