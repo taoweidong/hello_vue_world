@@ -91,6 +91,7 @@ const defaultListQuery = {
 };
 
 export default {
+  name: "test2Page",
   data() {
     return {
       listQuery: Object.assign({}, defaultListQuery),

@@ -85,9 +85,9 @@ a {
 /* 页面主体部分 */
 .content-box {
   position: absolute;
-  left: 250px;      /* 控制左侧二级菜单栏的宽度 */
+  left: 0;     /* 控制左侧二级菜单栏的宽度 */
   right: 0;
-  top: 70px;
+  top: 80px;
   bottom: 0;
   padding: 10px 20px;
   -webkit-transition: left .3s ease-in-out;

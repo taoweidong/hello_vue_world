@@ -15,6 +15,11 @@ import { formatSeconds } from "./utils/tools.js";
 import "./assets/css/main.css";
 import "./assets/css/theme.scss";
 
+// 加载vxe表格
+import VXETable from "vxe-table";
+import "vxe-table/lib/style.css";
+Vue.use(VXETable);
+
 Vue.use(ElementUI);
 Vue.use(ViewUI);
 Vue.prototype.$axios = axios;
